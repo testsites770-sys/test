@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פוטו-פרו | ציוד צילום מקצועי</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold tracking-tighter text-blue-600">PHOTO<span class="text-gray-900">PRO</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 space-x-reverse text-lg font-medium">
+                    <a href="#" class="hover:text-blue-600 transition">דף הבית</a>
+                    <a href="#categories" class="hover:text-blue-600 transition">מצלמות</a>
+                    <a href="#products" class="hover:text-blue-600 transition">עדשות</a>
+                    <a href="#services" class="hover:text-blue-600 transition">מעבדה</a>
+                    <a href="#contact" class="hover:text-blue-600 transition">צור קשר</a>
+                </div>
+                <div>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">לחנות האונליין</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">תפסו את הרגע עם הציוד הטוב בעולם</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">הבית של הצלמים בישראל. מצלמות, עדשות וציוד היקפי מהמותגים המובילים: Canon, Sony, Nikon ועוד.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-xl font-bold transition">לצפייה בקטלוג 2024</a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg text-xl font-bold transition">שירותי מעבדה</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">הקטגוריות שלנו</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative overflow-hidden rounded-2xl group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cameras" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                    <h3 class="text-white text-2xl font-bold">מצלמות Mirrorless</h3>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lenses" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                    <h3 class="text-white text-2xl font-bold">עדשות מקצועיות</h3>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1495121553079-4c61bbbc19df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Accessories" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                    <h3 class="text-white text-2xl font-bold">תאורה ואביזרים</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">מוצרים נבחרים</h2>
+                    <p class="text-gray-600">הדגמים הכי חמים במלאי עכשיו</p>
+                </div>
+                <a href="#" class="text-blue-600 font-bold border-b-2 border-blue-600">כל המוצרים</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-blue-600 font-bold uppercase">Sony</span>
+                    <h4 class="font-bold text-lg mb-2 text-gray-800">Alpha A7 IV Body</h4>
+                    <p class="text-gray-500 text-sm mb-4">מצלמת Full Frame מתקדמת לסטילס ווידאו.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">₪8,490</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616423641454-ec6946006b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-blue-600 font-bold uppercase">Canon</span>
+                    <h4 class="font-bold text-lg mb-2 text-gray-800">EOS R6 Mark II</h4>
+                    <p class="text-gray-500 text-sm mb-4">הביצועים המהירים ביותר בקטגוריה.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">₪9,200</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-blue-600 font-bold uppercase">DJI</span>
+                    <h4 class="font-bold text-lg mb-2 text-gray-800">Mini 4 Pro Fly More</h4>
+                    <p class="text-gray-500 text-sm mb-4">צילום אווירי עוצר נשימה ב-4K.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">₪4,550</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603914856238-963d86504a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-blue-600 font-bold uppercase">Sigma</span>
+                    <h4 class="font-bold text-lg mb-2 text-gray-800">24-70mm f/2.8 DG DN</h4>
+                    <p class="text-gray-500 text-sm mb-4">עדשת הזום הורסטילית ביותר בשוק.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">₪3,890</span>
+                        <button class="bg-gray-900 text-white p-2 rounded-lg hover:bg-blue-600 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Repair" class="rounded-3xl shadow-2xl">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 italic text-blue-600">הרבה יותר מרק חנות</h2>
+                <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                    בפוטו-פרו אנחנו מבינים שצילום הוא דרך חיים. לכן אנחנו מציעים מעבדת תיקונים מקצועית, ייעוץ אישי לבניית קיטים לצילום, ושירותי טרייד-אין המאפשרים לכם להתחדש בקלות.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3">
+                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full">✓</span>
+                        <span class="font-bold">ניקוי חיישן מקצועי בתוך שעה</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full">✓</span>
+                        <span class="font-bold">טרייד-אין הוגן על הציוד הישן</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full">✓</span>
+                        <span class="font-bold">הדרכות אישיות לשימוש במצלמה</span>
+                    </li>
+                </ul>
+                <button class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-600 hover:text-white transition">למידע נוסף על שירותי המעבדה</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-blue-600 py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">הצטרפו לקהילת הצלמים שלנו</h2>
+            <p class="text-blue-100 mb-8 text-lg">קבלו עדכונים על השקות מוצרים חדשים, טיפים לצילום ומבצעים בלעדיים למייל.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="כתובת המייל שלך" class="flex-grow px-6 py-4 rounded-lg focus:outline-none">
+                <button class="bg-gray-900 text-white px-10 py-4 rounded-lg font-bold hover:bg-gray-800 transition">הרשמה</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 text-right">
+            <div>
+                <h3 class="text-white text-2xl font-bold mb-6">PHOTO<span class="text-blue-500">PRO</span></h3>
+                <p class="text-sm leading-relaxed">
+                    החנות המובילה בישראל לציוד צילום מקצועי מאז 2010. אנחנו מתחייבים לאיכות, שירות ומקצועיות ללא פשרות.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">ניווט מהיר</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition">חנות מצלמות</a></li>
+                    <li><a href="#" class="hover:text-white transition">עדשות יד שנייה</a></li>
+                    <li><a href="#" class="hover:text-white transition">בלוג צילום</a></li>
+                    <li><a href="#" class="hover:text-white transition">מדיניות משלוחים</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">שירות לקוחות</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition">שאלות ותשובות</a></li>
+                    <li><a href="#" class="hover:text-white transition">תקנון האתר</a></li>
+                    <li><a href="#" class="hover:text-white transition">אחריות מוצרים</a></li>
+                    <li><a href="#" class="hover:text-white transition">צור קשר</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">צרו קשר</h4>
+                <p class="text-sm mb-2">רחוב המצלמה 12, תל אביב</p>
+                <p class="text-sm mb-2">טלפון: 03-1234567</p>
+                <p class="text-sm mb-6">אימייל: info@photopro.co.il</p>
+                <div class="flex space-x-4 space-x-reverse">
+                    <div class="w-8 h-8 bg-gray-700 rounded-full hover:bg-blue-500 transition cursor-pointer"></div>
+                    <div class="w-8 h-8 bg-gray-700 rounded-full hover:bg-blue-400 transition cursor-pointer"></div>
+                    <div class="w-8 h-8 bg-gray-700 rounded-full hover:bg-pink-500 transition cursor-pointer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            כל הזכויות שמורות © 2024 פוטו-פרו ישראל. נבנה באהבה לצלמים.
+        </div>
+    </footer>
+
+</body>
+</html>
